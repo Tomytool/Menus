@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-weight: bold;
+}
+img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.capa {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  padding: 10px 0 10px 0;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  height: 30px;
+}
+.boton {
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.boton::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform: scale(0);
+  transition: transform 0.25s ease-in-out;
+}
+.boton:hover::after {
+  transform: scale(1);
+  transform-origin: bottom center;
+}
+.boton:hover {
+  color: red;
+}
+
+.contenido {
+  z-index: 1;
+  padding-top: 150px;
+  padding-left: 10%;
+}
+.contenido > h1 {
+  font-size: 40px;
+}
+.botones {
+  padding-top: 10%;
+}
+
+.botones > button {
+  width: 220px;
+  height: 54px;
+  left: 88px;
+  top: 778px;
+  border-radius: 55px;
+  color: white;
+  background-color: #252c57;
+  border: 0;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botones > button:hover {
+  background-color: #f61063;
+}
