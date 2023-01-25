@@ -1,5 +1,5 @@
 $color_hover:#3454D1;
-$color_fondo:#FBFF0A;
+$color_fondo:#18A999;
 $color_menu:#ffffff;
 
 
@@ -12,4 +12,77 @@ list-style: none;
 
 body{
     background-color:$color_fondo ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    nav{
+        width: 100px;
+        height: 80%;
+        background-color: $color_menu;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        lu{
+            width: 100%;
+            height: 100%;
+
+            li{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                span{
+                    position: absolute;
+                    
+                }
+                .material-symbols-outlined{
+                    font-size: 3rem;
+                    cursor: pointer;
+                }
+                .material-symbols-outlined:hover{
+                    color: $color_hover;
+
+                }
+             
+                }
+                .opcion{
+                    position: absolute;
+                    left: 130px;
+                    width: 100px;
+                    height: 45px;
+                    padding: 14% 17px;
+                    background-color: $color_menu;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+                p::before{
+                    content: " ";
+                    width: 0; 
+                    height: 0; 
+                    border-right: 22px solid $color_menu;
+                    border-top: 13px solid transparent;
+                    border-bottom: 13px solid transparent;
+                    position: absolute;
+                    left: -15px;
+                    top:8px;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+                .material-symbols-outlined:hover ~ .opcion{
+                    opacity: 1;
+                    ::before{
+                        opacity: 1;
+                    }
+            }
+        }
+        }
 }
