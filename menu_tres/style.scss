@@ -1,4 +1,7 @@
-$color_fondo:#3454D1;
+$color_hover:#3454D1;
+$color_fondo:#FBFF0A;
+$color_menu:#ffffff;
+
 
 *{
 margin:0;
@@ -6,11 +9,7 @@ padding:0;
 box-sizing: border-box;
 list-style: none;
 }
+
 body{
- background-color:$color_fondo ;
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100vw;
- height: 100vh;
+    background-color:$color_fondo ;
 }
