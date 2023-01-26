@@ -39,6 +39,7 @@ body .contenedor ul .opcion {
   align-items: center;
   position: relative;
   cursor: pointer;
+  margin-left: 20px;
 }
 body .contenedor ul .opcion::before {
   content: " ";
