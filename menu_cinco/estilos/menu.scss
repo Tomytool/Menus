@@ -1,0 +1,23 @@
+/* importaciones de font*/
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+/*area de variables*/
+$color_fondo:#14342B;
+$color_hover:#BAB700;
+$color_texto:#FFF;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: $color_fondo;
+    width: 100vw;
+    height: 100vh;
+
+
+}
