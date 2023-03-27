@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+.menu .menu-ingreso-icono, .menu .menu-opciones-icono{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 2rem;
+}
+.material-symbols-outlined{
+    font-size: 2rem;
+}
+
+.menu .menu-logo{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+.menu .menu-opciones, .menu .menu-ingreso{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+    font-size: 24px;
+}
+
+.menu .menu-opciones li, .menu .menu-ingreso li{
+    cursor: pointer;
+}
+.menu .menu-opciones li:hover{
+    color: rgb(248, 244, 31);
+}
+
+.menu .menu-ingreso li:hover{
+    color: rgb(248, 244, 31);
+}
+
+/* codigo que se activa cuando el width es menor a 760px */
+@media (max-width:760px){
+    .menu .menu-ingreso{
+        display: none;
+        position: absolute;
+        right: 0;
+        top:72px ;
+        flex-direction: column;
+        background-color: black ;
+        padding: 10px;
+    }
+    .mostrar{
+        display: block;
+    }
+      
+    .menu .menu-ingreso-icono{
+        display: block;
+    }
+ }
+
+
+
+/* codigo que se activa cuando el width es menor a 500px */
+@media (max-width:500px){
+    .menu .menu-opciones{
+        display: none;
+        position: absolute;
+        right:30%;
+        top:72px ;
+        flex-direction: column;
+        background-color: black ;
+        padding: 10px;
+    }
+
+    .menu .menu-opciones{
+        display: none;
+    }
+    .menu .menu-opciones-icono{
+        display: block;
+    }
+}

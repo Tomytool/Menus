@@ -1,0 +1,59 @@
+$altura_menu:3rem;
+$color_fondo:#ADE1E5;
+$color_texto:#000501;
+$color_menu:#73AB84;
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $color_fondo;
+    nav{
+        height: $altura_menu;
+        width: 100%;
+        background-color: $color_menu;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            text-transform: uppercase;
+            height: $altura_menu;
+            width: $altura_menu;
+            text-align: center;
+            border:  1px solid black;
+        }
+        .menu{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            border: 1px solid black;
+            li{
+                text-align: center;
+                width: calc(100%/4);
+                // height: $altura_menu;
+                position: relative;
+                margin: 0 auto;
+            }
+            .submenu{
+                position: absolute;
+                height:auto;
+                background-color: $color_menu;
+                top: 2rem;
+                border: 1px solid black;
+                li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
